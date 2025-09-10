@@ -1,69 +1,22 @@
-# frozen_string_literal: true
-
+# CLI Tools
 brew 'mas'
-
-brew 'jenv'
-
 brew 'cocoapods'
-brew 'git-flow'
-brew 'mysql@8.4'
-brew 'python@3.8'
-brew 'pyenv'
-brew 'pipenv'
-brew 'pyenv-virtualenv'
-brew 'nvm'
-brew 'watchman'
-brew 'tree'
-brew 'openssl'
 brew 'rbenv'
-brew 'ruby-build'
-brew 'postgresql@14'
-brew 'forego'
-brew 'brotli'
-brew 'git-ftp'
-brew 'lftp'
-brew 'gh'
-brew 'gdal'
-brew 'lefthook'
-brew 'tfenv'
-brew 'lcov'
-brew 'go'
-brew 'goenv'
-brew 'golangci-lint'
-brew 'bundletool'
-brew 'jq'
-brew 'ffmpeg'
-brew 'yt-dlp'
-brew 'logrotate'
-# phpenv
-brew 'zlib'
-brew 'libiconv'
-brew 'bzip2'
-brew 'tidy-html5'
 
-mas 'LINE', id: 539_883_307
+# Mac App Store (mas)
 mas 'KakaoTalk', id: 869_223_134
 mas 'Slack', id: 803_453_959
+mas 'Fuwari', id: 146_571_4562
+mas 'Shottr', id: 156_295_5201
 
-cask 'ngrok'
+# GUI Applications (cask)
 cask 'android-studio'
-cask 'mysqlworkbench'
-cask 'postman'
 cask 'google-chrome'
-cask 'microsoft-edge'
-cask 'firefox'
 cask 'iterm2'
-cask 'karabiner-elements'
 cask 'figma'
-cask 'cyberduck'
-cask 'clipy'
-cask 'framer'
-cask 'dbeaver-community'
 cask 'visual-studio-code'
-cask 'meld'
-cask 'docker'
 cask 'rectangle'
-cask 'github'
 
-tap 'leoafarias/fvm'
-brew 'fvm'
+cask 'cursor'           
+cask 'github-desktop'   
+cask 'gitkraken'        
