@@ -1,5 +1,5 @@
-fvm install 3.16.3
-fvm global 3.16.3
+fvm install stable
+fvm global stable
 
 source ~/.zshrc
 

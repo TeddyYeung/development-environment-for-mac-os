@@ -66,17 +66,6 @@ else
     echo "End #############################################################"
 fi
 
-# ---------- Node ----------
-if command -v node &> /dev/null; then
-    echo "Node already installed. Skipping..."
-else
-    echo "Install Node"
-    echo "Start ###########################################################"
-    chmod 755 ./node/install.sh
-    zsh ./node/install.sh
-    echo "End #############################################################"
-fi
-
 # ---------- VSCode ----------
 if [ -d "/Applications/Visual Studio Code.app" ]; then
     echo "VSCode already installed. Skipping..."

@@ -1,141 +1,84 @@
 {
-  "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
   "editor.fontFamily": "'D2Coding ligature'",
   "editor.fontLigatures": true,
-  "window.restoreWindows": "all",
-  "javascript.format.enable": false,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  
   "files.exclude": {
     "**/.git": true,
-    "**/.svn": true,
     "**/.DS_Store": true,
-    "*/node_modules": true,
+    "**/node_modules": true,
     "**/.idea": true,
-    "**/.vscode": false,
-    "**/yarn.lock": true,
-    "**/tmp": true,
-    "node_modules": true,
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
+    "**/build": true,
+    "**/.fvm": true
   },
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/node_modules/**": true,
-    "**/tmp": true,
-    "**/build": true,
-    "**/.fvm": true
+    "**/build/**": true,
+    "**/.fvm/**": true
   },
   "files.trimTrailingWhitespace": true,
+  
   "search.exclude": {
     "**/node_modules": true,
-    "**/bower_components": true,
     "**/.git": true,
     "**/.DS_Store": true,
-    "**/tmp": true,
-    "**/coverage": true,
     "**/build": true,
-    "**/Pods": true,
-    "**/*.xcodeproj": true,
-    "**/*.xcworkspace": true,
-    "**/.meteor": true,
     "**/.fvm": true
   },
-  "editor.formatOnSave": true,
-  "extensions.autoUpdate": true,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
-  },
-  "editor.suggestSelection": "first",
+  
   "workbench.iconTheme": "vscode-icons",
-  "editor.tabSize": 2,
-  "[python]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4,
-    "editor.formatOnType": true
-  },
-  "cSpell.enableFiletypes": ["!markdown"],
-  "python.languageServer": "Pylance",
+  "workbench.colorTheme": "Default Dark+",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
+  
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.rulers": [80],
+    "editor.rulers": [120],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": "off"
   },
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "[typescriptreact]": {
+  
+  "dart.flutterSdkPath": ".fvm/flutter_sdk",
+  "dart.debugSdkLibraries": true,
+  "dart.debugExternalPackageLibraries": true,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.userWords": ["asdfasdfasdfasdf"],
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "editor.inlineSuggest.enabled": true,
+  
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
     "markdown": true,
-    "scminput": false,
     "yaml": true
   },
-  "workbench.colorTheme": "Default Dark+",
-  "redhat.telemetry.enabled": false,
-  "swaggerViewer.previewInBrowser": true,
-  "workbench.editor.showTabs": "multiple",
-  "security.workspace.trust.untrustedFiles": "open",
-  "git.openRepositoryInParentFolders": "always",
-  "window.zoomLevel": 2,
-  "dart.debugSdkLibraries": true,
-  "dart.flutterSdkPath": ".fvm/flutter_sdk",
-  "dart.previewFlutterUiGuides": true,
-  "dart.previewFlutterUiGuidesCustomTracking": true,
-  "git-blame.config.logClickUrls": {},
-  "git-blame.config.showBlameInline": false,
-  "git-blame.gitWebUrl": "\"\"",
-  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
-  "diffEditor.ignoreTrimWhitespace": false,
-  // For Monorepo ESLint
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ],
   "github.copilot.editor.enableAutoCompletions": true,
-  "dart.debugExternalPackageLibraries": true,
-  "typescript.implementationsCodeLens.enabled": true,
-  "typescript.referencesCodeLens.enabled": true,
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "files.associations": {
-    "*.blade.php": "html"
-  },
-  "php.validate.executablePath": "/Users/j-kim/.config/herd-lite/bin/php",
-  "intelephense.environment.phpVersion": "8.3.12",
-  "laravel-pint.enable": true,
-  "[php]": {
-    "editor.defaultFormatter": "open-southeners.laravel-pint"
-  }
+  
+  "git.openRepositoryInParentFolders": "always",
+  
+  "extensions.autoUpdate": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "redhat.telemetry.enabled": false
 }
