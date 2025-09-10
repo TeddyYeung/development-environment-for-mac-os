@@ -110,49 +110,4 @@ else
     echo "End #############################################################"
 fi
 
-# ---------- KakaoTalk ----------
-if [ -d "/Applications/KakaoTalk.app" ]; then
-    echo "KakaoTalk already installed. Skipping download..."
-else
-    echo "Download KakaoTalk from official site"
-    curl -L -o ~/Downloads/KakaoTalk.dmg "https://download.kakao.com/mac/KakaoTalk.dmg"
-fi
-
-# ---------- Alfred ----------
-if [ -d "/Applications/Alfred 5.app" ] || [ -d "/Applications/Alfred 4.app" ]; then
-    echo "Alfred already installed. Skipping download..."
-else
-    echo "Download Alfred from official site"
-    curl -L -o ~/Downloads/Alfred.dmg "https://www.alfredapp.com/latest/Alfred_5.0.6.dmg"
-fi
-
-# ---------- Keka ----------
-if [ -d "/Applications/Keka.app" ]; then
-    echo "Keka already installed. Skipping..."
-else
-    echo "Open Keka download page"
-    open "https://www.keka.io/en/"
-fi
-
-# ---------- Mac App Store Apps ----------
-echo "Open Mac App Store for Fuwari"
-open "macappstore://apps.apple.com/kr/app/fuwari/id1465714562?mt=12"
-echo "Open Mac App Store for Shottr"
-open "macappstore://apps.apple.com/kr/app/shottr/id1562955201?mt=12"
-echo "Open Mac App Store for KakaoTalk"
-open "macappstore://apps.apple.com/kr/app/kakaotalk/id869223134?mt=12"
-
-# ---------- Manual setup ----------
-echo "Please change wallpaper"
-echo "Right click on the desktop -> Change Wallpaper... -> Select Black color"
-echo "Please change keyboard shortcuts by yourself."
-echo "Open System Settings -> Keyboard -> Keyboard Shortcuts... -> Input Sources -> Select the previous input source -> Change to Command + Space"
-echo "Open System Settings -> Keyboard -> Keyboard Shortcuts... -> Input Sources -> Select Next source input menu -> Change to Command + Shift + Space"
-echo "Open System Settings -> Keyboard -> Keyboard Shortcuts... -> Spotlight -> Show Spotlight search -> Change to Option + Space"
-echo "Open System Settings -> Keyboard -> Keyboard Shortcuts... -> Spotlight -> Show Finder search window -> Change to Command + Option + Space"
-
-echo "Optimize."
-echo "Open System Settings -> Accessibility -> Enable 'Reduce motion' and 'Reduce transparency'"
-echo "Open System Settings -> Spotlight -> Disable all without Applications"
-
 sudo pmset -c disablesleep 0
